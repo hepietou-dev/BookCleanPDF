@@ -1,0 +1,16 @@
+OCR 模型权重 SHA-256 核验记录（M7.1，核查日期 2026-11-14）
+实际分发文件（rapidocr_onnxruntime 1.4.4 wheel 内置 models/）：
+d2a7720d45a54257208b1e13e36a8479894cb74155a5efe29462512d42f49da9 *ch_PP-OCRv4_det_infer.onnx
+48fc40f24f6d2a207a2b1091d3437eb3cc3eb6b676dc3ef9c37384005483683b *ch_PP-OCRv4_rec_infer.onnx
+e47acedf663230f8863ff1ab0e64dd2d82b838fceb5957146dab185a89d6215c *ch_ppocr_mobile_v2.0_cls_infer.onnx
+
+官方 RapidOCR default_models.yaml 注册哈希（main 分支，ModelScope v3.10.0）：
+ch_PP-OCRv4_det_mobile : d2a7720d45a54257208b1e13e36a8479894cb74155a5efe29462512d42f49da9  -> 与 det 完全一致
+ch_PP-OCRv4_rec_mobile : 48fc40f24f6d2a207a2b1091d3437eb3cc3eb6b676dc3ef9c37384005483683b  -> 与 rec 完全一致
+ch_ppocr_mobile_v2.0_cls: e47acedf663230f8863ff1ab0e64dd2d82b838fceb5957146dab185a89d6215c  -> 与 cls 完全一致
+
+结论：三个模型工件与官方注册记录逐字节一致（文件名 _infer 与注册名 _mobile 不同，按 MODEL_LICENSES.md §5 以哈希确立工件身份）。
+许可证：Apache-2.0；上游模型权重版权 Baidu/PaddleOCR；RapidOCR 转换/再分发同为 Apache-2.0。
+来源：https://github.com/RapidAI/RapidOCR/blob/main/python/MODEL_LICENSES.md
+      https://github.com/RapidAI/RapidOCR/blob/main/python/rapidocr/default_models.yaml
+      https://github.com/PaddlePaddle/PaddleOCR/blob/main/LICENSE

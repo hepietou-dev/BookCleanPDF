@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+logs/
+temp/
+build/
+dist/
+# 公开仓库不发布：内部审计报告（含开发机用户名/路径/真实书名）与大体积分发二进制
+docs/
+release/
+# 内部审计 manifest（含开发机路径）与硬编码用户真实图书文件名的取证脚本
+THIRD_PARTY_LICENSES/manifest-m7_1.json
+scripts/m4_6_long_task.py
+scripts/make_m3_real_book_evidence.py

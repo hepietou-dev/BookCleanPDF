@@ -1,0 +1,12 @@
+# 实测锁定的运行时依赖（含传递依赖）。
+# 验证环境：Windows 11 x64 / Python 3.12.10 / 清华 PyPI 镜像 / 2026-11-11
+# 验证方式：pip 安装成功 + app.py --diagnose 全部通过 + pytest 14 项通过。
+# 升级依赖必须先跑完整测试集并重新测量体积。
+img2pdf==0.6.3
+lxml==6.1.3
+numpy==2.5.4
+opencv-python-headless==4.14.0.94
+packaging==26.3
+pikepdf==10.18.0
+pillow==11.3.0
+pypdfium2==4.30.0

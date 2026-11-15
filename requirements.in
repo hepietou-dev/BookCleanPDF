@@ -1,0 +1,7 @@
+# 人工维护的直接依赖（运行时）。精确版本见 requirements-lock.txt。
+# 约束：禁止 PyTorch / PaddlePaddle / TensorFlow / CUDA / 大型 OCR 运行时。
+numpy>=2.0,<3
+opencv-python-headless>=4.10,<5
+Pillow>=10.4,<12
+pypdfium2>=4.30,<5
+img2pdf>=0.5,<1

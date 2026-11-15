@@ -1,0 +1,7 @@
+# 开发依赖（不进安装包）。
+-r requirements-lock.txt
+pytest>=8,<9
+# M5.5 打包构建工具（仅构建用，不进运行时安装包；运行时依赖见 requirements-lock.txt，保持不变）
+pyinstaller==6.22.3
+# Inno Setup 为外部 Windows 工具（非 pip）：winget install JRSoftware.InnoSetup
+# 实测编译使用 Inno Setup 7.1.0（C:\Program Files\Inno Setup 7\ISCC.exe）；6.7.3 亦已注册可用。

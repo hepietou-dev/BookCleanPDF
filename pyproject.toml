@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bookclean-pdf"
+version = "0.0.1"
+description = "完全本地运行的 Windows 图书扫描件/拍摄件修复工具（图像型 PDF 重制）"
+requires-python = ">=3.12,<3.13"
+license = { text = "Proprietary" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src", "."]
+addopts = "-q"
